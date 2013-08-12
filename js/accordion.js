@@ -3,8 +3,6 @@
     
   $('.accordion > dt > a').click(function() {
 
-    var position = $(this).position();
-
     if ( $(this).hasClass('open')) {
       $(this).parent().next().slideUp();
       $(this).removeClass('open');
@@ -17,5 +15,4 @@
       return false;
     }
   });
-
 })(jQuery);
